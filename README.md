@@ -11,5 +11,6 @@
 ``` npm install```
 # Run the App
 
-``` DEBUG=acadeapp:* npm start ```
+``` DEBUG=acadeapp:* npm start ```  <p>Broadcasted on port 3000</p>
+
 
