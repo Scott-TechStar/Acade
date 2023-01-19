@@ -1,5 +1,17 @@
 extends layout
 
 block content
- h1= title 
- p This is our #{title}
+  nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: #e3f2fd;')
+    div.container-fluid
+      a.navbar-brand(href='/') Acade Academy     
+      button.navbar-toggler(type='button',data-bs-toggle='collapse',data-bs-target='#navbarNavAltMarkup',aria-controls='navbarNavAltMarkup',aria-expanded='false',aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      form.d-flex(role='search')
+        input.form-control.me-2(type='search',placeholder='Search',aria-label='Search')
+        button.btn.btn-outline-success(type='submit') Search
+    div.collapse.navbar-collapse(id='navbarNavAltMarkup')
+      div.navbar-nav
+        a.nav-link.active(aria-current='page',href='/') Home
+        a.nav-link(href='/about') About
+        a.nav-link(href='/contact') Contact
+ 
