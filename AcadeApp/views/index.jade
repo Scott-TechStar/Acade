@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: blue;')
+  nav.navbar.navbar-expand-lg.bg-body-light(style='background-color: green;')
     div.container-fluid
       a.navbar-brand(style='color: red;',href='/') Acade Academy 
       a.navbar-brand(href='/') Books 
@@ -16,4 +16,30 @@ block content
         a.nav-link.active(aria-current='page',href='/') Home
         a.nav-link(href='/about') About
         a.nav-link(href='/contact') Contact
+  br
+  h1.text-center(style= 'positio: center;') Get Ready for Usefull Academic Resources
+  p.text-center Explore some of our 24/7 support for the new school term.
+  br
+  div.row.row-cols-3.g-4(style= 'padding-top: 100px;')
+    div.col
+     div.card(style='width: 25rem;')
+       img.card-img-top(src='/images/Q&A.jpg',alt='Loading...')
+       div.card-body
+         h5.card-title Expert Q & A
+         p.card-text Access millions of expert solutions designed for your best study sessions. 
+         a.btn.btn-primary(href='/') Learn More
+    div.col  
+     div.card(style='width: 25rem;')
+       img.card-img-top(src='/images/textbooks.jpeg',alt='Loading...', style= 'height: 234px;')
+       div.card-body
+         h5.card-title Textbooks Solutions
+         p.card-text Understand your tough textbook problems. Walk through each part of the solution step by step.
+         a.btn.btn-primary(href='/') Learn More
+    div.col
+     div.card(style='width: 25rem;')
+       img.card-img-top(src='/images/papers.jpeg',alt='Loading...', style= 'height: 234px;')
+       div.card-body
+         h5.card-title Latest Academic Papers
+         p.card-text Stay up-to-date with latest Academics works from different academic departments.
+         a.btn.btn-primary(href='/') Learn More
 
