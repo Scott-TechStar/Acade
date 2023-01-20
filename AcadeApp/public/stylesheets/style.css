@@ -7,3 +7,15 @@ body {
 a {
   color: #00B7FF;
 }
+.carousel-caption{
+  top: 45%;
+}
+.sb{
+  width: 50%;
+  height: 15%;
+  top: 60%;
+  padding-left: 300px;
+}
+.nbar{
+  border-radius: 30px;
+}

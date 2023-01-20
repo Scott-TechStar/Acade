@@ -1,23 +1,58 @@
 extends layout
 
 block content
-  nav.navbar.navbar-expand-lg.bg-body-light(style='background-color: green;')
+  nav.nbar.navbar.navbar-expand-lg.bg-body-light(style='background-color: green;')
     div.container-fluid
       a.navbar-brand(style='color: red;',href='/') Acade Academy 
-      a.navbar-brand(href='/') Books 
+      div.dropdown
+        button.btn.btn-secondary.dropdown-toggle(type='button',data-bs-toggle='dropdown',aria-expanded='false') Books
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='/') Action
+            li
+            a.dropdown-item(href='/') Another action
+            li
+            a.dropdown-item(href='/') Something else here
+      div.dropdown
+        button.btn.btn-secondary.dropdown-toggle(type='button',data-bs-toggle='dropdown',aria-expanded='false') Study
+         ul.dropdown-menu
+            li
+              a.dropdown-item(href='/') Action
+            li
+            a.dropdown-item(href='/') Another action
+            li
+            a.dropdown-item(href='/') Something else here
+      div.dropdown
+        button.btn.btn-secondary.dropdown-toggle(type='button',data-bs-toggle='dropdown',aria-expanded='false') Career
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='/') Action
+            li
+            a.dropdown-item(href='/') Another action
+            li
+            a.dropdown-item(href='/') Something else here    
       a.navbar-brand(href='/') Sign in   
       button.navbar-toggler(type='button',data-bs-toggle='collapse',data-bs-target='#navbarNavAltMarkup',aria-controls='navbarNavAltMarkup',aria-expanded='false',aria-label='Toggle navigation')
         span.navbar-toggler-icon
       form.d-flex(role='search')
-        input.form-control.me-2(type='search',placeholder='Search',aria-label='Search')
-        button.btn.btn-outline-success(type='submit') Search
+        input.form-control.me-2(type='search',placeholder='Search For Solutions',aria-label='Search')
+        button.btn.btn-outline-success.btn-info(type='submit') Search
     div.collapse.navbar-collapse(id='navbarNavAltMarkup')
       div.navbar-nav
         a.nav-link.active(aria-current='page',href='/') Home
         a.nav-link(href='/about') About
         a.nav-link(href='/contact') Contact
   br
-  h1.text-center(style= 'positio: center;') Get Ready for Usefull Academic Resources
+  br
+
+  img.img-fluid(src='/images/cover.jpg', alt='Loading...', style= 'height: 400px; width: 100%')
+  h1.carousel-caption(style='color: red; text-weight: bold') Study help tailored to your courses
+  form.sb.d-flex.carousel-caption(role='search')
+        input.form-control.me-2(type='search',placeholder='Search For Solutions',aria-label='Search')
+        button.btn.btn-outline-success.btn-info(type='submit') Search
+  br
+  hr
+  h1.text-center(style= 'position: center;') Get Ready for Usefull Academic Resources
   p.text-center Explore some of our 24/7 support for the new school term.
   br
   div.row.row-cols-3.g-4(style= 'padding-top: 100px;')
