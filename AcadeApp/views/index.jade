@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: #e3f2fd;')
+  nav.navbar.navbar-expand-lg.bg-body-tertiary(style='background-color: blue;')
     div.container-fluid
-      a.navbar-brand(href='/') Acade Academy     
+      a.navbar-brand(style='color: red;',href='/') Acade Academy 
+      a.navbar-brand(href='/') Books 
+      a.navbar-brand(href='/') Sign in   
       button.navbar-toggler(type='button',data-bs-toggle='collapse',data-bs-target='#navbarNavAltMarkup',aria-controls='navbarNavAltMarkup',aria-expanded='false',aria-label='Toggle navigation')
         span.navbar-toggler-icon
       form.d-flex(role='search')
